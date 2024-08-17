@@ -7,8 +7,11 @@ import { Highlight } from "@/components/ui/hero-highlight";
 
 export function HeroSlider() {
   const images = [
-    "https://images.unsplash.com/photo-1695800293626-c71dffa08164?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1649728424169-cac7ae0157b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "/bg-1.webp",
+    "/bg-2.webp",
+    "/bg-3.webp",
+    "/bg-4.webp",
+    "/bg-5.webp",
   ];
   return (
     <ImagesSlider className="h-[40rem]" images={images}>

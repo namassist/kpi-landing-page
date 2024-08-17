@@ -8,11 +8,8 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import { IconTarget, IconWorld } from "@tabler/icons-react";
 
 export function AboutUs() {
-  const images = [
-    "https://images.unsplash.com/photo-1602860109208-613d39362844?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1678984239726-ac972091a751?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1649294010513-6c2a5b0c35fc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  ];
+  const images = ["/bg-1.webp", "/bg-2.webp", "/bg-5.webp"];
+  const images2 = ["/dok-1.webp", "/dok-11.webp", "/dok-13.webp"];
 
   return (
     <section className="py-20">
@@ -30,14 +27,14 @@ export function AboutUs() {
         }}
         className="container mx-auto"
       >
-        <motion.h1 className="text-lg font-bold text-neutral-300">
+        <motion.h4 className="text-lg font-bold text-neutral-300">
           Tentang Kami
-        </motion.h1>
+        </motion.h4>
         <motion.div className="w-full flex items-center gap-2">
           <motion.div className="w-full md:w-6/12">
-            <motion.h4 className="font-bold text-xl md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-[#458ff8] to-[#5A8ED4]">
+            <motion.h1 className="font-bold text-xl md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-[#458ff8] to-[#5A8ED4]">
               Dari minyak mentah ke energi bersih <br />
-            </motion.h4>
+            </motion.h1>
             <motion.h4 className="font-bold text-xl md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-l from-[#458ff8] to-[#5A8ED4]">
               Inovasi tanpa henti, keberlanjutan pasti
             </motion.h4>
@@ -51,10 +48,7 @@ export function AboutUs() {
             <motion.p className="leading-relaxed mt-5">
               Kami berkomitmen pada pembangunan berkelanjutan berbasis sosial
               dan lingkungan, dengan fokus pada{" "}
-              <Highlight
-                duration={0.5}
-                className="capitalize"
-              >
+              <Highlight duration={0.5} className="capitalize">
                 perlindungan keanekaragaman hayati
               </Highlight>
               . Program kami meliputi perlindungan flora dan fauna di sekitar
@@ -92,7 +86,7 @@ export function AboutUs() {
               ))}
             </div>
             <div className="flex justify-center items-center">
-              {images.map((image, idx) => (
+              {images2.map((image, idx) => (
                 <motion.div
                   key={"images" + idx}
                   style={{

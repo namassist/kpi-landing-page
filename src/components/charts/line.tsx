@@ -1,46 +1,38 @@
-"use client"
+"use client";
 import { BackgroundGradient } from "../ui/background-gradient";
-import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts"
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { CartesianGrid, LabelList, Line, LineChart, XAxis } from "recharts";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
-
-const chartData = [
-  { year: "2021", populasi: 0 },
-  { year: "2022", populasi: 3 },
-  { year: "2023", populasi: 10 },
-  { year: "2024", populasi: 10 },
-]
+} from "@/components/ui/chart";
 
 const chartConfig = {
   populasi: {
     label: "jumlah",
     color: "hsl(var(--chart-1))",
   },
-} satisfies ChartConfig
+} satisfies ChartConfig;
 
+interface ChartData {
+  year: string;
+  populasi: number;
+}
 
-export function LineChartComponent() {
+export function LineChartComponent({ data }: { data: ChartData[] }) {
   return (
     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-foreground">
-    <Card className="w-full bg-foreground text-neutral-200 border-transparent">
+      <Card className="w-full bg-foreground text-neutral-200 border-transparent">
         <CardHeader>
           <CardTitle>Grafik Populasi Mambruk</CardTitle>
         </CardHeader>
         <CardContent>
-          <ChartContainer config={chartConfig}>
+          <ChartContainer config={chartConfig} className="h-[300px] w-full">
             <LineChart
               accessibilityLayer
-              data={chartData}
+              data={data}
               margin={{
                 top: 20,
                 left: 12,
@@ -83,5 +75,5 @@ export function LineChartComponent() {
         </CardContent>
       </Card>
     </BackgroundGradient>
-  )
+  );
 }

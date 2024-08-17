@@ -17,7 +17,7 @@ export default function CardDemo() {
             height="100"
             width="100"
             alt="Avatar"
-            src="/manu.png"
+            src="https://github.com/namassist.png"
             className="h-10 w-10 rounded-full border-2 object-cover"
           />
           <div className="flex flex-col">

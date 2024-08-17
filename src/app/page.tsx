@@ -2,14 +2,15 @@ import { AboutUs } from "@/components/about-us";
 import Articles from "@/components/articles";
 import Header from "@/components/header";
 import { HeroSlider } from "@/components/hero/slider";
+import MainLayout from "@/components/layouts/main";
 
 export default function Home() {
   return (
-    <main className="bg-foreground text-neutral-50">
+    <MainLayout>
       <Header />
       <HeroSlider />
       <AboutUs />
       <Articles />
-    </main>
+    </MainLayout>
   );
 }

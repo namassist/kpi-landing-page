@@ -9,29 +9,29 @@ export default function Header() {
     {
       id: 1,
       href: "/",
-      name: "profil"
+      name: "profil",
     },
     {
       id: 2,
       href: "/kebijakan",
-      name: "kebijakan"
+      name: "kebijakan",
     },
     {
       id: 3,
       href: "/berita",
-      name: "berita"
+      name: "berita",
     },
     {
       id: 4,
       href: "/laporan",
-      name: "laporan"
+      name: "laporan",
     },
     {
       id: 5,
       href: "/dokumentasi",
-      name: "dokumentasi"
+      name: "dokumentasi",
     },
-  ]
+  ];
   return (
     <header className="z-[10000] max-w-screen top-0 left-0 center fixed h-20 w-screen">
       <div className="flex w-full items-center justify-between px-6 xl:px-24 my-2 relative z-[10000] text-white">
@@ -47,10 +47,10 @@ export default function Header() {
           <span className="hidden md:flex gap-3 mt-2 z-[10000]">
             {navigations?.map((nav) => (
               <a
-                className={`capitalize animate-fade-in min-w-fit flex text-left shadow-sm px-4 py-2 h-fit rounded-lg font-semibold ${pathname === nav?.href ? "bg-gradient-to-tr from-[#336BB7] to-[#6C5DD3]" : "hover:border hover:border-zinc-700/50 hover:bg-zinc-700/50 border border-black/0 hover:shadow-2xl hover:shadow-gray-900 hover:bg-opacity-70"}`}
+                className={`capitalize animate-fade-in min-w-fit flex text-left shadow-sm px-4 py-2 h-fit rounded-lg font-semibold ${pathname === nav?.href || pathname.startsWith("/" + nav?.name) ? "bg-gradient-to-tr from-[#336BB7] to-[#6C5DD3]" : "hover:border hover:border-zinc-700/50 hover:bg-zinc-700/50 border border-black/0 hover:shadow-2xl hover:shadow-gray-900 hover:bg-opacity-70"}`}
                 href={`${nav?.href}`}
                 key={nav?.id}
-                >
+              >
                 <div className="relative w-fit">
                   <div className="min-w-[50x]">{nav?.name}</div>
                 </div>
