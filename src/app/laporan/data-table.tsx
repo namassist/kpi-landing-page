@@ -98,7 +98,7 @@ export function DataTable<T>({ columns, data }: DataTableProps<T>) {
         </Table>
       </div>
       {data.length > 10 && (
-        <div className="flex items-center justify-end space-x-2 py-4">
+        <div className="flex items-center justify-end space-x-2 py-6">
           <Button
             variant="outline"
             size="sm"

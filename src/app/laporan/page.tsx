@@ -14,7 +14,7 @@ export default function Home() {
     title: tab.title,
     value: tab.value,
     content: (
-      <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-foreground">
+      <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
         <div
           className={`w-full overflow-hidden relative h-[800px] rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1a56a9] to-[#1351a1] space-y-10`}
         >

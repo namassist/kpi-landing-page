@@ -23,8 +23,8 @@ interface ChartData {
 
 export function LineChartComponent({ data }: { data: ChartData[] }) {
   return (
-    <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-foreground">
-      <Card className="w-full bg-foreground text-neutral-200 border-transparent">
+    <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
+      <Card className="w-full bg-background text-neutral-200 border-transparent">
         <CardHeader>
           <CardTitle>Grafik Populasi Mambruk</CardTitle>
         </CardHeader>

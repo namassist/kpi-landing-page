@@ -41,8 +41,8 @@ export default function Home() {
         }}
         className="container mx-auto py-20"
       >
-        <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-foreground">
-          <Card className="w-full bg-foreground text-neutral-200 border-transparent min-h-[400px]">
+        <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
+          <Card className="w-full bg-background text-neutral-200 border-transparent min-h-[400px]">
             <CardHeader>
               <motion.h1 className="font-bold text-xl text-center md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-[#458ff8] to-[#5A8ED4]">
                 Kebijakan Perlindungan Keanekaragaman Hayati
