@@ -9,10 +9,9 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="text-neutral-50">
+    <main>
       <Header />
       {children}
-      {/* <Footer /> */}
     </main>
   );
 }

@@ -1,3 +1,36 @@
+export const navigations = [
+  {
+    id: 1,
+    href: "/",
+    name: "profil",
+    title: "Profil",
+  },
+  {
+    id: 2,
+    href: "/kebijakan",
+    name: "kebijakan",
+    title: "kebijakan",
+  },
+  {
+    id: 3,
+    href: "/data-absolute",
+    name: "data-absolute",
+    title: "Data Absolute",
+  },
+  {
+    id: 4,
+    href: "/laporan",
+    name: "laporan",
+    title: "laporan",
+  },
+  {
+    id: 5,
+    href: "/dokumentasi",
+    name: "dokumentasi",
+    title: "dokumentasi",
+  },
+];
+
 const flora = [
   {
     nama_latin: "Alastromitra macrocarpa",
@@ -931,10 +964,10 @@ export const posts = [
     author: "Admin",
     createdAt: "10 Agustus 2024",
     chart: [
-      { year: "2021", populasi: 2 },
-      { year: "2022", populasi: 3 },
-      { year: "2023", populasi: 10 },
-      { year: "2024", populasi: 10 },
+      { year: "2021", populasi: 16 },
+      { year: "2022", populasi: 19 },
+      { year: "2023", populasi: 20 },
+      { year: "2024", populasi: 21 },
     ],
     slug: "penangkaran-rusa-timor-warisan-alam-yang-dilestarikan-di-kilang-pertamina",
   },
@@ -999,10 +1032,10 @@ export const posts = [
     author: "Admin",
     createdAt: "10 Agustus 2024",
     chart: [
-      { year: "2021", populasi: 0 },
-      { year: "2022", populasi: 3 },
-      { year: "2023", populasi: 10 },
-      { year: "2024", populasi: 10 },
+      { year: "2021", populasi: 8.92 },
+      { year: "2022", populasi: 8.97 },
+      { year: "2023", populasi: 9.35 },
+      { year: "2024", populasi: 9.66 },
     ],
     slug: "serapan-karbondioksida-dan-karbon-kontribusi-kilang-ru-vii-kasim-dalam-mengurangi-pemanasan-global",
   },
@@ -1022,10 +1055,10 @@ export const posts = [
     author: "Admin",
     createdAt: "10 Agustus 2024",
     chart: [
-      { year: "2021", populasi: 0 },
-      { year: "2022", populasi: 3 },
-      { year: "2023", populasi: 10 },
-      { year: "2024", populasi: 10 },
+      { year: "2021", populasi: 3.02 },
+      { year: "2022", populasi: 3.09 },
+      { year: "2023", populasi: 3.11 },
+      { year: "2024", populasi: 3.38 },
     ],
     slug: "indeks-keanekaragaman-hayati-h-komitmen-kilang-pertamina-terhadap-lingkungan",
   },

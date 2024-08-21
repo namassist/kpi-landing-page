@@ -27,17 +27,15 @@ export function AboutUs() {
         }}
         className="container mx-auto"
       >
-        <motion.h4 className="text-lg font-bold text-neutral-300">
+        <motion.h4 className="text-xl font-bold uppercase text-foreground/80">
           Tentang Kami
         </motion.h4>
         <motion.div className="w-full flex items-center gap-2">
           <motion.div className="w-full md:w-6/12">
-            <motion.h1 className="font-bold text-xl md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-[#458ff8] to-[#5A8ED4]">
-              Dari minyak mentah ke energi bersih <br />
+            <motion.h1 className="font-bold text-xl md:text-3xl capitalize text-[#0072CE]">
+              Dari minyak mentah ke energi bersih <br /> Inovasi tanpa henti,
+              keberlanjutan pasti
             </motion.h1>
-            <motion.h4 className="font-bold text-xl md:text-3xl capitalize bg-clip-text text-transparent bg-gradient-to-l from-[#458ff8] to-[#5A8ED4]">
-              Inovasi tanpa henti, keberlanjutan pasti
-            </motion.h4>
             <motion.p className="leading-relaxed mt-5">
               PT Kilang Pertamina Internasional Refinery Unit VII Kasim terletak
               di Kabupaten Sorong, Papua Barat. Kilang ini mengolah 10.000 barel
@@ -73,7 +71,7 @@ export function AboutUs() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden"
                 >
                   <Image
                     src={image}
@@ -102,7 +100,7 @@ export function AboutUs() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden"
                 >
                   <Image
                     src={image}
@@ -117,31 +115,27 @@ export function AboutUs() {
           </motion.div>
         </motion.div>
         <div className="flex gap-2">
-          <div className=" w-full relative max-w-xs">
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-            <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start">
-              <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-2 border-gray-500">
+          <div className=" w-full relative max-w-xs text-white">
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
+            <div className="relative shadow-xl bg-[rgb(0,114,206)] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start">
+              <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-2">
                 <IconWorld />
               </div>
-              <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                Visi
-              </h1>
-              <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+              <h1 className="font-bold text-xl mb-4 relative z-50">Visi</h1>
+              <p className="font-normal text-sm mb-4 relative z-50">
                 Sebagai Perusahaan Kilang Minyak dan Petrokimia Berkelas Dunia
               </p>
               <Meteors number={20} />
             </div>
           </div>
-          <div className="w-full relative max-w-xs">
-            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-            <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
+          <div className="w-full relative max-w-xs text-white">
+            <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
+            <div className="relative shadow-xl bg-[#0072CE] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
               <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-2 border-gray-500">
                 <IconTarget />
               </div>
-              <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                Misi
-              </h1>
-              <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+              <h1 className="font-bold text-xl mb-4 relative z-50">Misi</h1>
+              <p className="font-normal text-sm mb-4 relative z-50">
                 Menjalankan bisnis Kilang Minyak dan Petrokimia secara
                 profesional dan berstandar Internasional dengan prinsip
                 keekonomian yang kuat dan berwawasan lingkungan

@@ -24,7 +24,7 @@ interface ChartData {
 export function LineChartComponent({ data }: { data: ChartData[] }) {
   return (
     <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
-      <Card className="w-full bg-background text-neutral-200 border-transparent">
+      <Card className="w-full border-transparent">
         <CardHeader>
           <CardTitle>Grafik Populasi Mambruk</CardTitle>
         </CardHeader>
@@ -45,7 +45,6 @@ export function LineChartComponent({ data }: { data: ChartData[] }) {
                 tickLine={false}
                 axisLine={false}
                 tickMargin={8}
-                color="text-neutral-200"
               />
               <ChartTooltip
                 cursor={false}
@@ -63,12 +62,7 @@ export function LineChartComponent({ data }: { data: ChartData[] }) {
                   r: 6,
                 }}
               >
-                <LabelList
-                  position="top"
-                  offset={12}
-                  className="fill-neutral-100"
-                  fontSize={12}
-                />
+                <LabelList position="top" offset={12} fontSize={12} />
               </Line>
             </LineChart>
           </ChartContainer>

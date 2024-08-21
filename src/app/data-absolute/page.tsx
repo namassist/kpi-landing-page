@@ -26,15 +26,9 @@ export default function Home() {
         className="container mx-auto py-10 space-y-10"
       >
         <div className="mx-auto max-w-2xl text-center lg:max-w-6xl">
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-nutral-100 sm:text-5xl">
-            Berita
+          <h1 className="mt-2 text-xl font-bold tracking-tight text-[#0072ce] sm:text-4xl">
+            Data Absolute
           </h1>
-          <p className="mx-auto mt-6 mb-8 max-w-4xl text-center text-sm sm:text-lg leading-8 text-neutral-200 dark:text-gray-200">
-            <span data-br=":R9bqul5a:" data-brr="1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos, expedita.
-            </span>
-          </p>
         </div>
         <div className="grid grid-cols-3 gap-5">
           {posts?.map((post) => <CardPost key={post?.title} data={post} />)}

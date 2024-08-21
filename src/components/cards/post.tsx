@@ -26,7 +26,10 @@ export default function CardPost({ data }: { data: CardPostData }) {
   };
 
   return (
-    <Link href={`/berita/${data.slug}`} className="w-full group/card mb-10">
+    <Link
+      href={`/data-absolute/${data.slug}`}
+      className="w-full group/card mb-10"
+    >
       <div
         className={`cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl backgroundImage flex flex-col justify-between p-4 bg-cover`}
         style={{ backgroundImage: `url(${data.thumbnail})` }}

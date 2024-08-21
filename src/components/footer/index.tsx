@@ -8,13 +8,6 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center w-full sm:justify-end sm:w-auto">
           <div className="grid w-full sm:grid-cols-4 col-span-4 mb-2 text-sm text-center sm:w-auto sm:mb-0">
             <span className="flex w-full sm:w-auto justify-center sm:justify-start">
-              {/* <Image
-                className="mr-1 rounded-full"
-                src="/logo.webp"
-                width="20"
-                height="20"
-                alt="Open X"
-              /> */}
               KPI RU7 Kasim
             </span>
           </div>
