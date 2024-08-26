@@ -5,7 +5,7 @@ import MainLayout from "@/components/layouts/main";
 import { HeroSlider } from "@/components/hero/slider";
 import { Tabs } from "@/components/ui/tabs";
 import { DataTable } from "./data-table";
-import { columnKonservasi, columns, Flora, Konservasi } from "./columns";
+import { columnKonservasi, columns, Flora, Fauna } from "./columns";
 import { laporanTab } from "@/lib/data";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 
@@ -20,10 +20,7 @@ export default function Home() {
         >
           <p className="text-center">{tab.contentTitle}</p>
           {tab?.is_konservasi ? (
-            <DataTable
-              columns={columnKonservasi}
-              data={tab.data as Konservasi[]}
-            />
+            <DataTable columns={columnKonservasi} data={tab.data as Fauna[]} />
           ) : (
             <DataTable columns={columns} data={tab.data as Flora[]} />
           )}
