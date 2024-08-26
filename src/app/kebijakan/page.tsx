@@ -9,14 +9,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 export default function Home() {
-  const images = [
-    "/bg-1.webp",
-    "/bg-2.webp",
-    "/bg-5.webp",
-    "/bg-1.webp",
-    "/bg-2.webp",
-  ];
-
   return (
     <MainLayout>
       <HeroSlider />
@@ -32,8 +24,23 @@ export default function Home() {
         transition={{
           duration: 0.6,
         }}
-        className="container mx-auto py-20 flex justify-center"
+        className="container mx-auto py-20 flex flex-col items-center justify-center space-y-14"
       >
+        <div className="w-full lg:w-10/12">
+          <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
+            <Card className="bg-white border-transparent">
+              <CardContent>
+                <Image
+                  src="/struktur.png"
+                  alt="kebijakan"
+                  width="500"
+                  height="500"
+                  className="rounded-lg w-full mx-auto object-cover"
+                />
+              </CardContent>
+            </Card>
+          </BackgroundGradient>
+        </div>
         <div className="w-full lg:w-10/12">
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
             <Card className="bg-white border-transparent">

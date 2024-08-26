@@ -2,10 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// interface
-interface ChartData {
+interface PopulationData {
   year: string;
   populasi: number;
+}
+
+interface ChartsData {
+  title: string;
+  data: PopulationData[];
 }
 
 interface CardPostData {
@@ -15,7 +19,7 @@ interface CardPostData {
   thumbnail: string;
   createdAt: string;
   slug: string;
-  chart: ChartData[];
+  charts: ChartsData[];
 }
 
 export default function CardPost({ data }: { data: CardPostData }) {

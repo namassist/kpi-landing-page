@@ -11,7 +11,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Facebook, InstagramIcon, Phone } from "lucide-react";
+import { Download, Facebook, InstagramIcon, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -35,29 +36,78 @@ export default function Header() {
   return (
     <header className="z-[10000] max-w-screen top-0 left-0 center fixed h-20 w-screen text-foreground">
       <div className="flex w-full items-center justify-between px-8 xl:px-24 my-2 relative z-[10000]">
-        <Link
-          href="/"
-          className="relative flex items-center h-full pt-2 space-x-2 group min-w-max"
-        >
-          <span className="text-xl font-semibold font-primary font-inter group-hover:text-[#0072CE]">
-            KehatiRU7Kasim
-          </span>
+        <Link href="/" className="relative flex items-center group min-w-max">
+          <Image
+            src="/logo-kpi.png"
+            alt="bali images"
+            width="500"
+            height="500"
+            className="rounded-lg object-cover flex-shrink-0 w-32"
+          />
         </Link>
         <div className="flex items-center space-x-8 z-[10000]">
           <span className="hidden md:flex gap-3 mt-2 z-[10000]">
-            {navigations?.map((nav) => (
-              <Link
-                className={`capitalize animate-fade-in min-w-fit flex text-left px-4 py-2 h-fit rounded-lg font-semibold ${pathname === nav?.href || pathname.startsWith("/" + nav?.name) ? "bg-[#0072CE] text-white" : "hover:border hover:border-neutral-300 hover:bg-[#0072CE] hover:text-white border border-white/0 hover:shadow-2xl"}`}
-                href={`${nav?.href}`}
-                key={nav?.id}
-              >
-                <div className="relative w-fit">
-                  <div className="min-w-[50x]">{nav?.title}</div>
-                </div>
-              </Link>
-            ))}
+            {navigations?.map((nav) =>
+              nav.href === "/publikasi" ? (
+                <DropdownMenu key={nav?.id}>
+                  <DropdownMenuTrigger asChild>
+                    <span
+                      className={`capitalize animate-fade-in min-w-fit flex text-left px-4 py-2 h-fit rounded-lg font-semibold hover:border hover:border-neutral-300 hover:bg-[#0072CE] hover:text-white border border-white/0 hover:shadow-2xl cursor-pointer`}
+                    >
+                      <div className="relative w-fit">
+                        <div className="min-w-[50x]">{nav.title}</div>
+                      </div>
+                    </span>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="max-w-lg !z-[10000000]">
+                    <DropdownMenuItem>
+                      <Link
+                        href="/tindakan-nyata-untuk-alam.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        locale={false}
+                        className="flex items-center capitalize"
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        Tindakan Nyata Untuk Alam
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        href="/ragam-burung-di-papua-barat.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        locale={false}
+                        className="flex items-center capitalize"
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        ragam burung di papua barat
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  className={`capitalize animate-fade-in min-w-fit flex text-left px-4 py-2 h-fit rounded-lg font-semibold ${
+                    pathname === nav?.href ||
+                    pathname.startsWith("/" + nav?.name)
+                      ? "bg-[#0072CE] text-white"
+                      : "hover:border hover:border-neutral-300 hover:bg-[#0072CE] hover:text-white border border-white/0 hover:shadow-2xl"
+                  }`}
+                  href={`${nav?.href}`}
+                  key={nav?.id}
+                >
+                  <div className="relative w-fit">
+                    <div className="min-w-[50x]">{nav?.title}</div>
+                  </div>
+                </Link>
+              )
+            )}
           </span>
         </div>
+
         <div className="mt-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>

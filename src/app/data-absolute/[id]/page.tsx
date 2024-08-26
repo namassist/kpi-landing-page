@@ -81,7 +81,9 @@ export default function Home({ params }: { params: { id: string } }) {
               <div className="space-y-10">
                 {post.contents.map((content, index) => {
                   if (content === "chart") {
-                    return <LineChartComponent key={index} data={post.chart} />;
+                    return (
+                      <LineChartComponent data={post.charts} key={index} />
+                    );
                   } else {
                     return (
                       <p key={index} className="leading-7 text-foreground">

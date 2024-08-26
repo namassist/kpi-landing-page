@@ -3,9 +3,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HeroSlider } from "@/components/hero/slider";
+import { posts } from "@/lib/data";
 import MainLayout from "@/components/layouts/main";
 import CardPost from "@/components/cards/post";
-import { posts } from "@/lib/data";
 
 export default function Home() {
   return (

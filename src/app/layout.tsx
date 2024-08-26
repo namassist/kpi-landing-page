@@ -8,9 +8,8 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PT Pertamina Kilang Pertamina Internasional RU VII Kasim",
-  description:
-    "Landing page PT Pertamina Kilang Pertamina Internasional RU VII Kasim ",
+  title: "PT Kilang Pertamina Internasional RU VII Kasim",
+  description: "Landing page PT Kilang Pertamina Internasional RU VII Kasim ",
 };
 
 export default function RootLayout({

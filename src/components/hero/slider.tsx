@@ -29,8 +29,9 @@ export function HeroSlider() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 leading-relaxed lg:leading-snug">
-          KPI Refinery Unit VII Kasim <br /> Berdedikasi pada{" "}
+        <motion.p className="font-bold text-xl md:text-5xl sm:max-w-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 leading-relaxed lg:leading-snug">
+          Program keanekaragaman hayati Kilang Pertamina Internasional RU VII
+          Kasim <br /> Berdedikasi pada{" "}
           <Highlight
             duration={0.5}
             className="text-neutral-800 dark:text-white capitalize"

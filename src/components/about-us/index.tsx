@@ -8,8 +8,8 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import { IconTarget, IconWorld } from "@tabler/icons-react";
 
 export function AboutUs() {
-  const images = ["/bg-1.webp", "/bg-2.webp", "/bg-5.webp"];
-  const images2 = ["/dok-1.webp", "/dok-11.webp", "/dok-13.webp"];
+  const images = ["/pic-1.webp", "/pic-2.webp", "/pic-6.webp"];
+  const images2 = ["/pic-4.webp", "/pic-5.webp", "/pic-3.webp"];
 
   return (
     <section className="py-20">
