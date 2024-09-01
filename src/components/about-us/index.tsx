@@ -34,8 +34,8 @@ export function AboutUs() {
         <motion.h4 className="text-xl font-bold uppercase text-foreground/80">
           Tentang Kami
         </motion.h4>
-        <motion.div className="w-full flex flex-col space-y-4 sm:flex-row sm:space-y-0 items-center gap-2">
-          <motion.div className="w-full md:w-6/12">
+        <motion.div className="w-full flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:items-center gap-2">
+          <motion.div className="w-full lg:w-6/12">
             <motion.h1 className="font-bold text-xl md:text-3xl capitalize text-[#0072CE]">
               Dari minyak mentah ke energi bersih <br /> Inovasi tanpa henti,
               keberlanjutan pasti
@@ -57,7 +57,7 @@ export function AboutUs() {
               area perusahaan, serta monitoring dan evaluasi rutin setiap tahun.
             </motion.p>
           </motion.div>
-          <motion.div className="w-full md:w-6/12">
+          <motion.div className="w-full lg:w-6/12">
             <div className="flex justify-center items-center">
               {images.map((image, idx) => (
                 <motion.div
@@ -118,7 +118,7 @@ export function AboutUs() {
             </div>
           </motion.div>
         </motion.div>
-        <div className="flex flex-col space-y-4 gap-2 mt-6 sm:mt-0 sm:flex-row sm:space-y-0">
+        <div className="flex flex-col space-y-4 gap-4 mt-8 lg:mt-0 sm:flex-row sm:space-y-0">
           <div className="w-full relative sm:max-w-xs text-white">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-[rgb(0,114,206)] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start">

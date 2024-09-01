@@ -46,7 +46,7 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center space-x-8 z-[10000]">
-          <span className="hidden md:flex gap-3 mt-2 z-[10000]">
+          <span className="hidden lg:flex gap-3 mt-2 z-[10000]">
             {navigations?.map((nav) =>
               nav.href === "/publikasi" ? (
                 <DropdownMenu key={nav?.id}>
@@ -107,8 +107,7 @@ export default function Header() {
             )}
           </span>
         </div>
-
-        <div className="mt-2">
+        <div className="hidden lg:block mt-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm">

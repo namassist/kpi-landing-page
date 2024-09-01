@@ -30,7 +30,7 @@ export default function Home() {
             Data Absolute
           </h1>
         </div>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {posts?.map((post) => <CardPost key={post?.title} data={post} />)}
         </div>
       </motion.div>

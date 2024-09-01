@@ -27,15 +27,15 @@ export default function Home() {
         className="container mx-auto py-20 flex flex-col items-center justify-center space-y-14"
       >
         <div className="w-full lg:w-10/12">
-          <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
-            <Card className="bg-white border-transparent">
-              <CardContent>
+          <BackgroundGradient className="rounded-[22px] p-2 sm:p-6 bg-background">
+            <Card className="bg-background border-transparent shadow-none">
+              <CardContent className="p-0">
                 <Image
-                  src="/struktur.webp"
+                  src="/struktur.png"
                   alt="kebijakan"
                   width="500"
                   height="500"
-                  className="rounded-lg w-full mx-auto object-cover"
+                  className="rounded-lg w-full h-full mx-auto object-cover"
                 />
               </CardContent>
             </Card>
@@ -43,8 +43,8 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-10/12">
           <BackgroundGradient className="rounded-[22px] p-4 sm:p-6 bg-background">
-            <Card className="bg-white border-transparent">
-              <CardContent>
+            <Card className="bg-background border-transparent shadow-none">
+              <CardContent className="p-0">
                 <Image
                   src="/kebijakan.jpg"
                   alt="kebijakan"
