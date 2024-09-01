@@ -9,7 +9,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main>
+    <main className="w-full">
       <Header />
       {children}
     </main>

@@ -8,8 +8,12 @@ import { Highlight } from "@/components/ui/hero-highlight";
 import { IconTarget, IconWorld } from "@tabler/icons-react";
 
 export function AboutUs() {
-  const images = ["/pic-1.webp", "/pic-2.webp", "/pic-6.webp"];
-  const images2 = ["/pic-4.webp", "/pic-5.webp", "/pic-3.webp"];
+  const images = [
+    "/thumbnail-main-1.webp",
+    "/thumbnail-main-2.webp",
+    "/thumbnail-main-3.webp",
+  ];
+  const images2 = ["/bg-4.webp", "/bg-5.webp", "/bg-3.webp"];
 
   return (
     <section className="py-20">
@@ -30,7 +34,7 @@ export function AboutUs() {
         <motion.h4 className="text-xl font-bold uppercase text-foreground/80">
           Tentang Kami
         </motion.h4>
-        <motion.div className="w-full flex items-center gap-2">
+        <motion.div className="w-full flex flex-col space-y-4 sm:flex-row sm:space-y-0 items-center gap-2">
           <motion.div className="w-full md:w-6/12">
             <motion.h1 className="font-bold text-xl md:text-3xl capitalize text-[#0072CE]">
               Dari minyak mentah ke energi bersih <br /> Inovasi tanpa henti,
@@ -71,14 +75,14 @@ export function AboutUs() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden max-w-full"
                 >
                   <Image
                     src={image}
                     alt="bali images"
                     width="500"
                     height="500"
-                    className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                    className="rounded-lg h-24 w-24 md:h-40 md:w-40 object-cover flex-shrink-0"
                   />
                 </motion.div>
               ))}
@@ -100,22 +104,22 @@ export function AboutUs() {
                     rotate: 0,
                     zIndex: 100,
                   }}
-                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden"
+                  className="rounded-xl -mr-4 mt-4 p-1 bg-white border border-neutral-300 flex-shrink-0 overflow-hidden max-w-full"
                 >
                   <Image
                     src={image}
                     alt="bali images"
                     width="500"
                     height="500"
-                    className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+                    className="rounded-lg h-24 w-24 md:h-40 md:w-40 object-cover flex-shrink-0"
                   />
                 </motion.div>
               ))}
             </div>
           </motion.div>
         </motion.div>
-        <div className="flex gap-2">
-          <div className=" w-full relative max-w-xs text-white">
+        <div className="flex flex-col space-y-4 gap-2 mt-6 sm:mt-0 sm:flex-row sm:space-y-0">
+          <div className="w-full relative sm:max-w-xs text-white">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-[rgb(0,114,206)] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-start items-start">
               <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-2">
@@ -128,7 +132,7 @@ export function AboutUs() {
               <Meteors number={20} />
             </div>
           </div>
-          <div className="w-full relative max-w-xs text-white">
+          <div className="w-full relative sm:max-w-xs text-white">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-[#0072CE] px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
               <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-2 border-gray-500">

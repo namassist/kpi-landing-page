@@ -70,6 +70,7 @@ export default function Home({ params }: { params: { id: string } }) {
                   height="400"
                   width="400"
                   alt={post.slug}
+                  priority={true}
                 />
               </div>
 

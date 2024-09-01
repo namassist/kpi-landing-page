@@ -31,7 +31,7 @@ export default function Home() {
             <Card className="bg-white border-transparent">
               <CardContent>
                 <Image
-                  src="/struktur.png"
+                  src="/struktur.webp"
                   alt="kebijakan"
                   width="500"
                   height="500"

@@ -1651,7 +1651,7 @@ export const posts = [
       "Selain menjaga populasi Rusa Timor, program ini juga memberikan dampak positif pada ekosistem di sekitar area penangkaran. Keberadaan Rusa Timor membantu menjaga keseimbangan alam, seperti pengendalian vegetasi dan distribusi benih tanaman melalui mekanisme alami. Perusahaan juga telah bekerja sama dengan para ahli ekologi untuk terus memantau dan menyesuaikan strategi penangkaran, guna memastikan bahwa setiap langkah yang diambil selalu selaras dengan prinsip keberlanjutan.",
       "Pencapaian ini tidak hanya diakui di tingkat lokal, tetapi juga mendapat apresiasi dari berbagai lembaga konservasi di tingkat nasional dan internasional. PT Kilang Pertamina berharap bahwa program ini dapat menjadi model bagi upaya pelestarian satwa lainnya, serta berkontribusi pada keanekaragaman hayati di Indonesia.",
     ],
-    thumbnail: "/bg-3.webp",
+    thumbnail: "/thumbnail-rusa.webp",
     author: "Admin",
     createdAt: "10 Agustus 2024",
     charts: [
@@ -1678,7 +1678,7 @@ export const posts = [
       "Perusahaan juga aktif berkolaborasi dengan komunitas lokal dan pemerintah daerah dalam program edukasi untuk meningkatkan kesadaran masyarakat tentang pentingnya pelestarian Mambruk Ubiaat. Keterlibatan masyarakat lokal dalam program ini telah membantu memperkuat dukungan terhadap upaya pelestarian, sehingga memastikan keberlangsungan jangka panjang.",
       "Dengan adanya peningkatan populasi yang konsisten, PT Kilang Pertamina Internasional Refinery Unit VII Kasim terus memperluas area konservasi dan meningkatkan fasilitas penangkaran. Langkah ini diambil untuk mengakomodasi kebutuhan Mambruk Ubiaat yang semakin meningkat, serta untuk menjaga keseimbangan ekosistem di sekitarnya.",
     ],
-    thumbnail: "/bg-4.webp",
+    thumbnail: "/thumbnail-mambruk.webp",
     author: "Admin",
     createdAt: "10 Agustus 2024",
     charts: [
@@ -1706,17 +1706,18 @@ export const posts = [
       "Selain itu, keberhasilan rehabilitasi mangrove juga berdampak pada peningkatan populasi spesies yang hidup di kawasan ini, termasuk berbagai jenis ikan, burung, dan hewan lainnya. Dengan melibatkan para ahli dan komunitas lokal, perusahaan terus berupaya untuk memastikan bahwa kawasan mangrove ini tetap terjaga dan dapat berfungsi optimal sebagai habitat bagi keanekaragaman hayati.",
       "Program ini juga menjadi bagian dari strategi perusahaan dalam menghadapi tantangan perubahan iklim. Dengan penyerapan karbon yang meningkat, kawasan mangrove ini berkontribusi signifikan dalam mengurangi emisi GRK, sekaligus melindungi pantai dari risiko abrasi dan bencana alam lainnya. Keberhasilan ini menjadikan PT Kilang Pertamina sebagai pionir dalam upaya konservasi mangrove di Indonesia.",
     ],
-    thumbnail: "/bg-2.webp",
+    thumbnail: "/thumbnail-mangrove.webp",
     author: "Admin",
     createdAt: "10 Agustus 2024",
     charts: [
       {
         title: "Konservasi Mangrove",
         data: [
-          { year: "2021", populasi: 0 },
-          { year: "2022", populasi: 3 },
-          { year: "2023", populasi: 10 },
-          { year: "2024", populasi: 10 },
+          { year: "2020", populasi: 2639 },
+          { year: "2021", populasi: 7127 },
+          { year: "2022", populasi: 9028 },
+          { year: "2023", populasi: 9582 },
+          { year: "2024", populasi: 13920 },
         ],
       },
     ],
