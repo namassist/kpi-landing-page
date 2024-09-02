@@ -1772,7 +1772,7 @@ export const posts = [
       "Proses pemantauan keanekaragaman hayati di Kilang Pertamina melibatkan berbagai teknik ilmiah, mulai dari survei lapangan hingga analisis genetika. Dengan metode ini, perusahaan dapat mengidentifikasi perubahan dalam populasi flora dan fauna secara lebih mendetail. Data yang dikumpulkan kemudian dianalisis untuk mengetahui dampak dari setiap aktivitas operasional perusahaan terhadap ekosistem, yang menjadi dasar bagi pengambilan keputusan dalam manajemen lingkungan.",
       "Hasil dari pemantauan tersebut tidak hanya digunakan untuk kebutuhan internal perusahaan, tetapi juga dibagikan dengan para pemangku kepentingan, termasuk pemerintah dan lembaga konservasi. Transparansi ini menjadi salah satu bentuk akuntabilitas PT Kilang Pertamina dalam menjalankan tanggung jawab lingkungan. Dengan melibatkan berbagai pihak dalam evaluasi data, perusahaan memastikan bahwa tindakan yang diambil selalu berdasarkan prinsip kehati-hatian dan keberlanjutan.",
     ],
-    thumbnail: "/bg-2.webp",
+    thumbnail: "/thumbnail-indeks.webp",
     author: "Admin",
     createdAt: "10 Agustus 2024",
     charts: [

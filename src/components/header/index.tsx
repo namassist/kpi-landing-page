@@ -11,8 +11,25 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Download, Facebook, InstagramIcon, Phone } from "lucide-react";
+import {
+  AlignJustify,
+  Download,
+  Facebook,
+  InstagramIcon,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { Separator } from "@/components/ui/separator";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Header() {
   const pathname = usePathname();
@@ -135,6 +152,29 @@ export default function Header() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+        </div>
+        <div className="block lg:hidden">
+          <Drawer direction={"right"}>
+            <DrawerTrigger asChild>
+              <Button variant="outline">
+                <AlignJustify className="w-5 h-5" />
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="h-full w-[35%] bg-red-200 mt-28">
+              <DrawerHeader className="text-right">
+                <DrawerTitle>Citation</DrawerTitle>
+                <DrawerDescription>
+                  Make sure to check if the given answer is align with the
+                  original source.
+                </DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter className="pt-2">
+                <p className="text-sm italic">
+                  Thank you for <strong>diligently</strong> double checking!
+                </p>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
         </div>
       </div>
       <div
