@@ -32,21 +32,20 @@ export function HeroSlider() {
         className="z-50 flex flex-col justify-center items-center"
       >
         <motion.p className="font-bold text-2xl md:text-5xl sm:max-w-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-300 py-4 leading-relaxed lg:leading-snug ">
-          Program Keanekaragaman Hayati Kilang Pertamina Internasional RU VII
-          Kasim <br />{" "}
+          <Highlight
+            duration={0.5}
+            className="capitalize text-white from-[#e13f41] to-[#df0a0e]"
+          >
+            Program Keanekaragaman Hayati Kilang Pertamina Internasional RU VII
+            Kasim
+          </Highlight>
           <span className="block mt-8">
             Berdedikasi pada{" "}
-            <Highlight
-              duration={0.5}
-              className="text-neutral-800 dark:text-white capitalize"
-            >
+            <Highlight duration={0.5} className="text-white capitalize">
               Inovasi
             </Highlight>{" "}
             dan{" "}
-            <Highlight
-              duration={0.5}
-              className="text-neutral-800 dark:text-white capitalize"
-            >
+            <Highlight duration={0.5} className="text-white capitalize">
               Keberlanjutan
             </Highlight>
           </span>

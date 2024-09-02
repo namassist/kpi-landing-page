@@ -47,7 +47,7 @@ const images = [
   "/dokumentasi-11.webp",
   "/dokumentasi-12.webp",
   "/dokumentasi-13.webp",
-  "/pic-6.webp",
+  "/thumbnail-main-3.webp",
   "/dokumentasi-15.webp",
   "/dokumentasi-16.webp",
   "/dokumentasi-17.webp",

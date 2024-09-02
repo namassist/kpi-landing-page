@@ -36,6 +36,7 @@ export default function Home() {
                   width="500"
                   height="500"
                   className="rounded-lg w-full h-full mx-auto object-cover"
+                  priority
                 />
               </CardContent>
             </Card>
@@ -51,6 +52,7 @@ export default function Home() {
                   width="500"
                   height="500"
                   className="rounded-lg w-full mx-auto object-cover"
+                  priority
                 />
               </CardContent>
             </Card>

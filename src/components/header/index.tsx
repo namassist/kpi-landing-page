@@ -160,19 +160,67 @@ export default function Header() {
                 <AlignJustify className="w-5 h-5" />
               </Button>
             </DrawerTrigger>
-            <DrawerContent className="h-full w-[35%] bg-red-200 mt-28">
-              <DrawerHeader className="text-right">
-                <DrawerTitle>Citation</DrawerTitle>
-                <DrawerDescription>
-                  Make sure to check if the given answer is align with the
-                  original source.
-                </DrawerDescription>
-              </DrawerHeader>
-              <DrawerFooter className="pt-2">
-                <p className="text-sm italic">
-                  Thank you for <strong>diligently</strong> double checking!
-                </p>
-              </DrawerFooter>
+            <DrawerContent className="h-full w-full border-none pt-14 px-5">
+              <span className="flex flex-col justify-end gap-3 mt-5">
+                {navigations?.map((nav) =>
+                  nav.href === "/publikasi" ? (
+                    <DropdownMenu key={nav?.id}>
+                      <DropdownMenuTrigger asChild>
+                        <span
+                          className={`capitalize animate-fade-in flex text-right px-4 py-2 h-fit rounded-lg font-semibold hover:border hover:border-neutral-300 hover:bg-[#0072CE] hover:text-white border border-white/0 hover:shadow-2xl cursor-pointer`}
+                        >
+                          <div className="relative w-fit">
+                            <div className="min-w-[50x]">{nav.title}</div>
+                          </div>
+                        </span>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent className="max-w-lg !z-[10000000]">
+                        <DropdownMenuItem>
+                          <Link
+                            href="/tindakan-nyata-untuk-alam.pdf"
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            locale={false}
+                            className="flex items-center capitalize"
+                          >
+                            <Download className="h-4 w-4 mr-2" />
+                            Tindakan Nyata Untuk Alam
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem>
+                          <Link
+                            href="/ragam-burung-di-papua-barat.pdf"
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            locale={false}
+                            className="flex items-center capitalize"
+                          >
+                            <Download className="h-4 w-4 mr-2" />
+                            ragam burung di papua barat
+                          </Link>
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  ) : (
+                    <Link
+                      className={`capitalize animate-fade-in min-w-fit flex text-left px-4 py-2 h-fit rounded-lg font-semibold ${
+                        pathname === nav?.href ||
+                        pathname.startsWith("/" + nav?.name)
+                          ? "bg-[#0072CE] text-white"
+                          : "hover:border hover:border-neutral-300 hover:bg-[#0072CE] hover:text-white border border-white/0 hover:shadow-2xl"
+                      }`}
+                      href={`${nav?.href}`}
+                      key={nav?.id}
+                    >
+                      <div className="relative w-fit">
+                        <div className="min-w-[50x]">{nav?.title}</div>
+                      </div>
+                    </Link>
+                  )
+                )}
+              </span>
             </DrawerContent>
           </Drawer>
         </div>

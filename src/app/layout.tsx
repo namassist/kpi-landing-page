@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "PT Kilang Pertamina Internasional RU VII Kasim",
   description: "Landing page PT Kilang Pertamina Internasional RU VII Kasim ",
-  icons: [{ rel: "icon", url: "/logo.ico" }],
+  icons: [{ rel: "icon", url: "/favicon-square.ico" }],
 };
 
 export default function RootLayout({
@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="id" suppressHydrationWarning>
       <body className={`${inter.className} bg-background`}>
-        <ThemeProvider defaultTheme="dark">
+        <ThemeProvider>
           <NextTopLoader color="#5A8ED4" />
           <CustomHead />
           {children}
