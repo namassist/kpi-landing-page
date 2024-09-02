@@ -34,12 +34,12 @@ export function HeroSlider() {
         <motion.p className="font-bold text-2xl md:text-5xl sm:max-w-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-300 py-4 leading-snug">
           <Highlight
             duration={0.5}
-            className="capitalize text-white from-[#e13f41] to-[#df0a0e] leading-snug"
+            className="capitalize text-white from-[#e13f41] to-[#df0a0e] leading-relaxed"
           >
             Program Keanekaragaman Hayati Kilang Pertamina Internasional RU VII
             Kasim
           </Highlight>
-          <span className="block mt-8 leading-snug">
+          <span className="block mt-8 leading-relaxed">
             Berdedikasi pada{" "}
             <Highlight
               duration={0.5}
