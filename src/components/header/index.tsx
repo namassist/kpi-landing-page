@@ -19,21 +19,12 @@ import {
   Phone,
 } from "lucide-react";
 import Image from "next/image";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -154,9 +145,9 @@ export default function Header() {
           </DropdownMenu>
         </div>
         <div className="block lg:hidden">
-          <Drawer direction={"right"}>
+          <Drawer direction={"right"} open={open} onOpenChange={setOpen}>
             <DrawerTrigger asChild>
-              <Button variant="outline">
+              <Button variant="outline" onClick={() => setOpen(false)}>
                 <AlignJustify className="w-5 h-5" />
               </Button>
             </DrawerTrigger>

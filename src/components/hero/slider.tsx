@@ -31,17 +31,20 @@ export function HeroSlider() {
         }}
         className="z-50 flex flex-col justify-center items-center"
       >
-        <motion.p className="font-bold text-2xl md:text-5xl sm:max-w-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-300 py-4 leading-relaxed lg:leading-snug ">
+        <motion.p className="font-bold text-2xl md:text-5xl sm:max-w-5xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-300 py-4 leading-snug">
           <Highlight
             duration={0.5}
-            className="capitalize text-white from-[#e13f41] to-[#df0a0e]"
+            className="capitalize text-white from-[#e13f41] to-[#df0a0e] leading-snug"
           >
             Program Keanekaragaman Hayati Kilang Pertamina Internasional RU VII
             Kasim
           </Highlight>
-          <span className="block mt-8">
+          <span className="block mt-8 leading-snug">
             Berdedikasi pada{" "}
-            <Highlight duration={0.5} className="text-white capitalize">
+            <Highlight
+              duration={0.5}
+              className="text-white capitalize leading-normal"
+            >
               Inovasi
             </Highlight>{" "}
             dan{" "}
